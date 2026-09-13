@@ -4,6 +4,7 @@ import { FOOTER, CONTACT_EMAIL, CONTACT_PHONE } from "../../data/content";
 import { track, EVENTS } from "../../lib/analytics";
 import Button from "../ui/Button";
 import Reveal from "../ui/Reveal";
+import Sticker from "../ui/Sticker";
 import styles from "./Footer.module.css";
 
 const SOCIALS = [
@@ -17,7 +18,10 @@ export default function Footer() {
       <div className="container">
         <Reveal className={styles.ctaRow}>
           <h2 className="display">{FOOTER.finalCta}</h2>
-          <Button to="/contact" variant="solid" magnetic>Book a Consultation</Button>
+          <div className={styles.ctaSide}>
+            <Button to="/contact" variant="solid" magnetic>Book a Consultation</Button>
+            <Sticker text="LET'S BUILD • CTS • LET'S BUILD • CTS • " label="Start a project with CTS" />
+          </div>
         </Reveal>
 
         <div className={styles.grid}>
@@ -50,10 +54,11 @@ export default function Footer() {
           </div>
         </div>
 
-        <p className={styles.mark} aria-hidden="true">CTS</p>
+        <p className={styles.mark} aria-hidden="true">CTS®</p>
 
         <div className={styles.base}>
           <span>© 2026 Cleanomatics Tech Solutions. All rights reserved.</span>
+          <span className={styles.sys} aria-hidden="true">SYS / CTS® — V2.0 · IND → GLOBAL</span>
           <button className={styles.top} onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>
             Back to top<ArrowUp size={14} aria-hidden="true" />
           </button>

@@ -105,6 +105,7 @@ function Shell() {
       </a>
       <ScrollProgress />
       <Cursor />
+      <div className="grain-overlay" aria-hidden="true" />
       <Navbar onMenu={() => setMenu(true)} />
       <MobileMenu open={menu} onClose={() => setMenu(false)} />
       <PageWipe />

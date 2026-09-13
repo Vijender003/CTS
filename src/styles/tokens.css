@@ -73,6 +73,7 @@
   --shadow-sm: 3px 3px 0 var(--color-border);
   --shadow-md: 5px 5px 0 var(--color-border);
   --shadow-lg: 8px 8px 0 var(--color-border);
+  --shadow-xl: 12px 12px 0 var(--color-border);
   --shadow-red: 5px 5px 0 var(--color-error);
   --shadow-blue: 5px 5px 0 var(--color-primary);
 

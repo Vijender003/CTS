@@ -1,5 +1,11 @@
 .marquee { overflow: hidden; white-space: nowrap; border-top: var(--border-med) solid var(--color-border); border-bottom: var(--border-med) solid var(--color-border); background: var(--color-surface); }
+.marquee.ink { background: var(--color-ink); }
+.marquee.ink .item { color: var(--color-background); }
+.marquee.blue { background: var(--color-primary); }
+.marquee.blue .item { color: var(--color-ink); }
+.marquee.blue .item i { background: var(--color-ink); }
 .track { display: inline-flex; align-items: center; animation: tick 30s linear infinite; will-change: transform; padding: 16px 0; }
+.marquee.ink .track, .marquee.blue .track { padding: 14px 0; }
 .item {
   font-family: var(--font-display); font-weight: 900; font-size: clamp(20px, 2.6vw, 34px);
   letter-spacing: 0; text-transform: uppercase; color: var(--color-text); padding: 0 26px;

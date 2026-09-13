@@ -2,14 +2,22 @@ import { FOOTER } from "../data/content";
 import Reveal from "../components/ui/Reveal";
 import Button from "../components/ui/Button";
 import Magnetic from "../components/ui/Magnetic";
+import Sticker from "../components/ui/Sticker";
 import styles from "./FinalCta.module.css";
 
 export default function FinalCta() {
   return (
     <section className={`${styles.cta} grain`} aria-label="Book a consultation">
       <div className="container">
-        <Reveal><p className={styles.kick}>Final CTA — one click to CTS</p></Reveal>
-        <Reveal delay={1}><h2 className={`display ${styles.title}`}>{FOOTER.finalCta}</h2></Reveal>
+        <div className={styles.top2}>
+          <div>
+            <Reveal><p className={styles.kick}>Final CTA — one click to CTS</p></Reveal>
+            <Reveal delay={1}><h2 className={`display ${styles.title}`}>{FOOTER.finalCta}</h2></Reveal>
+          </div>
+          <Reveal delay={1} className={styles.badge}>
+            <Sticker text="START TODAY • CTS • START TODAY • CTS • " label="Start your project today" />
+          </Reveal>
+        </div>
         <Reveal delay={2} className={styles.row}>
           <Magnetic><Button to="/contact" variant="solid">Book a Free Consultation</Button></Magnetic>
           <Button to="/case-studies" variant="outlineLight">See the proof</Button>

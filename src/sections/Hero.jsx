@@ -6,6 +6,7 @@ import { heroEnter, ensureGsap } from "../animations/motion";
 import Button from "../components/ui/Button";
 import Counter from "../components/ui/Counter";
 import Magnetic from "../components/ui/Magnetic";
+import Sticker from "../components/ui/Sticker";
 import styles from "./Hero.module.css";
 
 const NODES = [
@@ -28,6 +29,14 @@ function EcoVisual() {
       <rect x="148" y="63" width="104" height="104" className={styles.core} />
       <text x="200" y="110" textAnchor="middle" className={styles.coreT}>Revenue</text>
       <text x="200" y="128" textAnchor="middle" className={styles.coreT}>Intelligence</text>
+    </svg>
+  );
+}
+
+function Spark({ className = "" }) {
+  return (
+    <svg viewBox="0 0 40 40" className={`${styles.spark} ${className}`} aria-hidden="true">
+      <path d="M20 0 L23.5 16.5 L40 20 L23.5 23.5 L20 40 L16.5 23.5 L0 20 L16.5 16.5 Z" />
     </svg>
   );
 }
@@ -62,6 +71,7 @@ export default function Hero() {
   return (
     <section className={styles.hero} onMouseMove={parallax} aria-label="Introduction">
       <div data-hero="backdrop" className={styles.bg} aria-hidden="true" />
+      <span className={styles.ghost} aria-hidden="true">01</span>
       <div className="container" ref={scope}>
         <div className={styles.top}>
           <p data-hero="eyebrow" className={styles.eyebrow}>
@@ -71,22 +81,26 @@ export default function Hero() {
         </div>
 
         <h1 className={styles.title}>
+          <Spark className={styles.s1} />
           <span data-hero="line" className={styles.line}><span>{HERO.titleA}</span></span>
           <span data-hero="line" className={styles.line}><span><em>{HERO.titleB}</em></span></span>
         </h1>
 
         <div className={styles.sub}>
-          <div>
+          <div className={styles.left}>
+            <Spark className={styles.s2} />
             <p data-hero="lede" className={styles.lede}>{HERO.lede}</p>
             <div className={styles.ctas}>
               <span data-hero="cta"><Magnetic><Button to={HERO.primaryCta.to}>{HERO.primaryCta.label}</Button></Magnetic></span>
               <span data-hero="cta"><Button to={HERO.secondaryCta.to} variant="ghost">{HERO.secondaryCta.label}</Button></span>
             </div>
+            <p data-hero="meta" className={styles.proof} aria-hidden="true">★ Top 10% Zoho Growth Partner — Partner of the Year ’23 / ’24</p>
           </div>
           <figure className={styles.visual} data-hero="visual">
             <figcaption><span>FIG. 01 — Revenue system</span><span className={styles.live}><i />Live diagram</span></figcaption>
             <EcoVisual />
             <div className={styles.vfoot}><span>CRM → MKT → Sales → Finance</span><span>CTS / OS</span></div>
+            <span className={styles.stickerPos} data-hero="cta"><Sticker /></span>
           </figure>
         </div>
 

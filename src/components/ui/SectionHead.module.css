@@ -2,7 +2,7 @@
 main { counter-reset: section; }
 .on-dark.head { border-top-color: var(--color-background); }
 .meta { display: flex; justify-content: space-between; align-items: center; gap: 16px; margin-bottom: 6px; }
-.index { font-family: var(--font-mono); font-size: 13px; font-weight: 700; letter-spacing: 0.1em; border: var(--border-med) solid var(--color-border); padding: 6px 12px; background: var(--color-surface); flex: none; }
+.index { font-family: var(--font-mono); font-size: 13px; font-weight: 700; letter-spacing: 0.1em; border: var(--border-med) solid var(--color-border); padding: 6px 12px; background: var(--color-primary); color: var(--color-ink); flex: none; transform: rotate(-2deg); box-shadow: 3px 3px 0 var(--color-border); }
 .index::before { content: "/" counter(section, decimal-leading-zero); }
 .on-dark .index { border-color: var(--color-background); background: transparent; color: var(--color-dark-text); }
 .split { display: grid; grid-template-columns: 1.5fr 1fr; gap: clamp(20px, 4vw, 72px); align-items: end; }

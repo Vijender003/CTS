@@ -25,7 +25,7 @@ export default function Home() {
   return (
     <main>
       <Hero />
-      <Marquee items={["Authorized Zoho Partner", "Top 10% Zoho Growth Partner", "Partner of the Year 2023", "Partner of the Year 2024", "UC Berkeley SkyDeck"]} />
+      <Marquee tone="blue" items={["Authorized Zoho Partner", "Top 10% Zoho Growth Partner", "Partner of the Year 2023", "Partner of the Year 2024", "UC Berkeley SkyDeck"]} />
       <Trust />
       <Problem />
       <Ecosystem />
@@ -39,6 +39,7 @@ export default function Home() {
       <Industries />
       <InsightsHome />
       <Faq />
+      <Marquee tone="ink" items={["Zoho CRM", "Marketing Automation", "Revenue Systems", "Fractional CMO", "Web Engineering", "AI Agents"]} />
       <FinalCta />
     </main>
   );
