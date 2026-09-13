@@ -1,0 +1,3 @@
+.grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; align-items: start; }
+.grid > *:nth-child(even) { margin-top: 40px; }
+@media (max-width: 860px) { .grid { grid-template-columns: 1fr; } .grid > *:nth-child(even) { margin-top: 0; } }

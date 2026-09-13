@@ -1,0 +1,21 @@
+.hero {
+  background: var(--color-background);
+  background-image:
+    linear-gradient(var(--color-line) 1px, transparent 1px),
+    linear-gradient(90deg, var(--color-line) 1px, transparent 1px);
+  background-size: 72px 72px;
+  border-bottom: var(--border-thick) solid var(--color-border);
+  padding: clamp(140px, 18vh, 190px) 0 clamp(56px, 6vw, 88px);
+  position: relative;
+}
+.k { margin-bottom: 20px; }
+.title { font-size: clamp(52px, 8.5vw, 128px); max-width: 18ch; }
+.rule { display: flex; gap: 0; margin-top: 30px; max-width: 560px; }
+.rule i { display: block; height: 8px; }
+.rule i:nth-child(1) { flex: 3; background: var(--color-ink); }
+.rule i:nth-child(2) { flex: 2; background: var(--color-primary); }
+.rule i:nth-child(3) { flex: 1; background: var(--color-error); }
+.lede { margin-top: 26px; font-size: clamp(16px, 1.6vw, 20px); color: var(--color-text-muted); max-width: 62ch; line-height: 1.65; font-weight: 500; }
+.metaRow { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 26px; }
+.metaRow span { font-family: var(--font-mono); font-size: 11px; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; border: var(--border-med) solid var(--color-border); background: var(--color-surface); padding: 8px 14px; }
+.metaRow span.hot { background: var(--color-error); color: #fff; }

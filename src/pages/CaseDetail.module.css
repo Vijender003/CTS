@@ -1,0 +1,15 @@
+.metric { display: grid; grid-template-columns: auto 1fr; gap: 34px; align-items: center; background: var(--color-ink); color: #fff; border: var(--border-thick) solid var(--color-border); box-shadow: 8px 8px 0 var(--color-primary); padding: clamp(30px, 4vw, 56px); margin-bottom: clamp(44px, 5vw, 76px); }
+.metric strong { display: block; font-family: var(--font-display); font-size: clamp(64px, 8.5vw, 124px); font-weight: 900; letter-spacing: -0.03em; line-height: 0.9; background: var(--color-primary); color: #101319; padding: 0 16px; justify-self: start; }
+.metric span { font-family: var(--font-mono); font-size: 12px; font-weight: 700; letter-spacing: 0.2em; text-transform: uppercase; color: var(--color-dark-muted); }
+.metric p { font-family: var(--font-display); font-size: clamp(22px, 2.8vw, 34px); font-weight: 800; text-transform: uppercase; letter-spacing: -0.01em; line-height: 1; }
+.row { border-top: var(--border-thick) solid var(--color-border); padding: 44px 0; display: grid; grid-template-columns: 240px 1fr; gap: 24px; }
+.row h2 { grid-column: 2; font-size: clamp(34px, 4.4vw, 60px); }
+.k { font-family: var(--font-mono); font-size: 12px; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; padding-top: 14px; }
+.k::before { content: ""; display: block; width: 34px; height: 8px; background: var(--color-error); margin-bottom: 12px; }
+.p { grid-column: 2; color: var(--color-text-muted); font-size: 17px; font-weight: 500; max-width: 68ch; }
+.res { grid-column: 2; font-family: var(--font-display); font-size: clamp(30px, 3.8vw, 50px); font-weight: 900; text-transform: uppercase; letter-spacing: -0.01em; line-height: 1; }
+.res, .row h2 em { color: inherit; }
+.related { margin-top: clamp(48px, 6vw, 90px); }
+.related h2 { font-size: clamp(30px, 3.6vw, 48px); margin-bottom: 28px; }
+.grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; align-items: start; }
+@media (max-width: 800px) { .row { grid-template-columns: 1fr; } .row h2, .p, .res { grid-column: 1; } .metric { grid-template-columns: 1fr; } .grid { grid-template-columns: 1fr; } }

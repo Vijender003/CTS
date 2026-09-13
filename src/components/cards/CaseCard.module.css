@@ -1,0 +1,26 @@
+.card {
+  display: flex; flex-direction: column; height: 100%;
+  background: var(--color-surface); border: var(--border-med) solid var(--color-border);
+  padding: clamp(24px, 2.6vw, 36px);
+  box-shadow: var(--shadow-md);
+  transform: translate(0, 0);
+  transition: transform 0.2s var(--ease-snap), box-shadow 0.2s var(--ease-snap);
+}
+.card:hover { transform: translate(-3px, -3px); box-shadow: 8px 8px 0 var(--color-border); }
+.top { display: flex; justify-content: space-between; align-items: center; gap: 10px; margin-bottom: 18px; }
+.num { font-family: var(--font-mono); font-size: 12px; font-weight: 700; letter-spacing: 0.1em; background: var(--color-ink); color: #fff; padding: 6px 12px; }
+.ind { font-family: var(--font-mono); font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--color-text-muted); border-bottom: 2px solid var(--color-primary); padding-bottom: 2px; }
+.card h3 { font-size: clamp(30px, 3.2vw, 46px); }
+.challenge { font-size: 14.5px; font-weight: 500; color: var(--color-text-muted); margin: 14px 0 22px; line-height: 1.6; }
+.metric { display: flex; align-items: baseline; gap: 12px; border-top: var(--border-med) solid var(--color-border); padding-top: 20px; margin-top: auto; }
+.metric strong { font-family: var(--font-display); font-size: clamp(34px, 3.8vw, 52px); font-weight: 900; letter-spacing: -0.02em; background: var(--color-primary); padding: 0 10px; }
+.metric span { font-family: var(--font-mono); font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--color-text-muted); }
+.go { display: inline-flex; align-items: center; gap: 8px; margin-top: 20px; font-size: 12px; font-weight: 800; letter-spacing: 0.16em; text-transform: uppercase; }
+.go svg { transition: transform 0.25s var(--ease-out), color 0.2s; }
+.card:hover .go { color: var(--color-primary-ink); }
+.card:hover .go svg { transform: translate(4px, -4px); color: var(--color-error); }
+.featured { background: var(--color-ink); color: var(--color-background); }
+.featured .challenge { color: var(--color-dark-muted); }
+.featured .metric { border-color: var(--color-background); }
+.featured .metric span { color: var(--color-dark-muted); }
+.featured .num { background: var(--color-error-ink); }

@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CTS® — Creative Technology Studio · Design × Technology × Experience</title>
+<meta name="description" content="CTS is a creative technology studio crafting digital products, websites and interactions. From idea to digital product.">
+<meta name="theme-color" content="#08080a">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%2308080a'/%3E%3Ccircle cx='16' cy='16' r='6' fill='%23f3f0e9'/%3E%3C/svg%3E">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="grain" aria-hidden="true"></div>
+<div class="cursor-dot" aria-hidden="true"></div>
+<div class="cursor-ring" aria-hidden="true"><span class="c-label">VIEW</span></div>
+
+<!-- preloader -->
+<div class="loader" id="loader" aria-hidden="true">
+  <div class="l-word"><span><em>CTS® STUDIO</em></span><span><em>FROM IDEA → PRODUCT</em></span></div>
+  <div class="l-meta">DESIGN × TECHNOLOGY × EXPERIENCE<br><span class="l-count" id="loadCount">00</span> / 100</div>
+</div>
+
+<!-- nav -->
+<header class="nav" id="nav">
+  <a href="#top" class="brand" aria-label="CTS Studio home"><span class="b-dot" aria-hidden="true"></span>CTS<sup>®</sup></a>
+  <nav class="nav-links" aria-label="Primary">
+    <a href="#work">WORK</a>
+    <a href="#services">SERVICES</a>
+    <a href="#lab">LAB</a>
+    <a href="#studio">STUDIO</a>
+    <a href="#insights">INSIGHTS</a>
+  </nav>
+  <div style="display:flex;gap:10px;align-items:center">
+    <a href="#contact" class="nav-cta mag" style="display:inline-block" data-cursor="START">START A PROJECT ↗</a>
+    <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<!-- mobile menu -->
+<nav class="mobile-menu" id="mobileMenu" aria-label="Mobile">
+  <a class="m-link" href="#work" style="transition-delay:.08s">Work <small>04</small></a>
+  <a class="m-link" href="#services" style="transition-delay:.14s">Services <small>08</small></a>
+  <a class="m-link" href="#lab" style="transition-delay:.2s">Lab <small>06</small></a>
+  <a class="m-link" href="#studio" style="transition-delay:.26s">Studio <small>01</small></a>
+  <a class="m-link" href="#contact" style="transition-delay:.32s">Contact <small>→</small></a>
+  <div class="m-foot"><span>CTS® — WORLDWIDE</span><span id="clockM">00:00</span></div>
+</nav>
+
+<main id="main">
+<!-- ================= HERO ================= -->
+<section class="hero" id="top" aria-label="Introduction">
+  <div class="hero-frag" data-depth="30" style="top:22%;left:6%">◍ <b>01 / VYBE</b> — NIGHTLIFE</div>
+  <div class="hero-frag" data-depth="55" style="top:30%;right:7%">◍ <b>02 / TOOLVERSE</b> — DEVTOOLS</div>
+  <div class="hero-frag" data-depth="40" style="bottom:34%;left:12%">◍ <b>03 / NEXORA</b> — AI PRODUCT</div>
+  <div class="hero-frag" data-depth="70" style="bottom:44%;right:11%">◍ <b>04 / HIGHRISES</b> — REAL ESTATE</div>
+
+  <div class="hero-top">
+    <p class="meta">CREATIVE TECHNOLOGY STUDIO<br>DESIGN × TECHNOLOGY × EXPERIENCE</p>
+    <p class="meta right">FROM IDEA → DIGITAL PRODUCT<br><span id="clock">00:00:00</span> — WORLDWIDE</p>
+  </div>
+
+  <h1 class="hero-title">
+    <span class="row"><span>WE BUILD</span></span>
+    <span class="row"><span class="stroke">DIGITAL</span></span>
+    <span class="row"><span>EXPERIENCES<span class="italic-x">.</span></span></span>
+  </h1>
+
+  <div class="hero-sub">
+    <p class="rv">CTS is an independent studio operating at the intersection of <strong>design, technology and experience</strong>. We take products <strong>from idea to digital product</strong> — strategy, interface, interaction and creative engineering, art-directed as one system.</p>
+    <div class="hero-ctas rv rv-d1">
+      <a href="#work" class="btn btn-solid mag" data-cursor="WORK">VIEW SELECTED WORK <span class="arr">↗</span></a>
+      <a href="#contact" class="btn btn-ghost mag" data-cursor="HELLO">START A PROJECT <span class="arr">→</span></a>
+    </div>
+  </div>
+
+  <div class="hero-strip">
+    <p class="meta"><span class="pulse" aria-hidden="true"></span>&nbsp; AVAILABLE FOR SELECTED PROJECTS — 2026</p>
+    <p class="meta">SCROLL TO ENTER ↓ &nbsp;·&nbsp; 04 PROJECTS · 08 CAPABILITIES · 01 FIELD</p>
+    <div class="scroll-hint" aria-hidden="true"><div class="wheel"></div><span class="meta">SCROLL</span></div>
+  </div>
+</section>
+
+<div class="ticker" aria-hidden="true">
+  <div class="ticker-track" id="tickerTrack">
+    <span><i>✦</i>BEAUTY NEEDS PURPOSE</span><span><i>✦</i>DETAIL CREATES DISTINCTION</span><span><i>✦</i>EXPERIENCE IS THE PRODUCT</span><span><i>✦</i>FROM IDEA TO DIGITAL PRODUCT</span>
+    <span><i>✦</i>BEAUTY NEEDS PURPOSE</span><span><i>✦</i>DETAIL CREATES DISTINCTION</span><span><i>✦</i>EXPERIENCE IS THE PRODUCT</span><span><i>✦</i>FROM IDEA TO DIGITAL PRODUCT</span>
+  </div>
+</div>
+
+<!-- ================= MANIFESTO ================= -->
+<section class="manifesto wrap" id="manifesto" aria-label="Manifesto">
+  <p class="kicker rv">01 — MANIFESTO</p>
+  <h2 class="mani-lines" style="margin-top:26px">
+    <span class="ml"><span><span class="lit">BEAUTY</span> <span class="dim">NEEDS</span></span></span>
+    <span class="ml"><span class="out">PURPOSE.</span></span>
+    <span class="ml"><span><span class="dim">DETAIL</span> <span class="lit">CREATES</span></span></span>
+    <span class="ml"><span class="out">DISTINCTION.</span></span>
+    <span class="ml"><span><span class="lit">EXPERIENCE</span> <span class="dim">IS THE</span></span></span>
+    <span class="ml"><span class="out">PRODUCT.</span></span>
+  </h2>
+  <div class="mani-foot">
+    <p class="rv">We don't decorate. We architect feeling — every grid, transition and interaction earns its place. If it doesn't sharpen hierarchy, deepen story, or move someone toward action, it doesn't ship.</p>
+    <div class="m-stats rv rv-d1">
+      <div><b>04</b><span>FLAGSHIP BUILDS</span></div>
+      <div><b>08</b><span>CAPABILITIES, ONE SYSTEM</span></div>
+      <div><b>07</b><span>STEPS, IDEA → EVOLVE</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= WORK ================= -->
+<section class="work" id="work" aria-label="Selected work">
+  <div class="wrap">
+    <div class="sec-head">
+      <div style="grid-column:1/9">
+        <p class="kicker rv">02 — SELECTED WORK</p>
+        <h2 class="sec-title rv rv-d1">WORK AS<br><span class="thin">EXPERIENCE</span></h2>
+      </div>
+      <p class="sec-note rv rv-d2" style="grid-column:9/13">Four flagship builds. Each one a full product story — context, problem, idea, system, interaction, technology. Filter by discipline or domain.</p>
+    </div>
+
+    <div class="filters" role="group" aria-label="Filter projects">
+      <div class="f-row" id="primaryFilters">
+        <span class="f-label">DISCIPLINE</span>
+        <button class="chip" data-filter="all" aria-pressed="true">All</button>
+        <button class="chip" data-filter="web" aria-pressed="false">Web</button>
+        <button class="chip" data-filter="product" aria-pressed="false">Digital Products</button>
+        <button class="chip" data-filter="uiux" aria-pressed="false">UI / UX</button>
+        <button class="chip" data-filter="interaction" aria-pressed="false">Interaction</button>
+        <button class="chip" data-filter="experiment" aria-pressed="false">Experiments</button>
+      </div>
+      <div class="f-row" id="domainFilters">
+        <span class="f-label">DOMAIN</span>
+        <button class="chip mini" data-domain="all" aria-pressed="true">All domains</button>
+        <button class="chip mini" data-domain="nightlife" aria-pressed="false">Nightlife</button>
+        <button class="chip mini" data-domain="devtools" aria-pressed="false">Developer tools</button>
+        <button class="chip mini" data-domain="ai" aria-pressed="false">AI</button>
+        <button class="chip mini" data-domain="realestate" aria-pressed="false">Real estate</button>
+        <button class="chip mini" data-domain="technology" aria-pressed="false">Technology</button>
+      </div>
+      <p class="work-count" id="workCount" aria-live="polite">SHOWING 04 / 04 PROJECTS</p>
+    </div>
+
+    <!-- 01 VYBE -->
+    <article class="proj rv" data-primary="product uiux interaction experiment" data-domain="nightlife technology" data-name="vybe">
+      <div class="proj-index">PRJ<b>01</b></div>
+      <div class="proj-body">
+        <div class="proj-tags"><span class="tag">Digital Product</span><span class="tag">UI / UX</span><span class="tag">Interaction</span><span class="tag">Nightlife</span></div>
+        <h3 class="proj-title"><a href="#contact" data-cursor="OPEN">VYBE</a></h3>
+        <p class="proj-lede">The city after dark, productized. VYBE turns fragmented nightlife discovery — venues, nights, crowds, tickets — into one cinematic social surface.</p>
+        <div class="proj-spec">
+          <div><h4>CONTEXT → PROBLEM</h4><p>Discovery lived across chats, flyers and dead listings. Intent evaporated before the night began.</p></div>
+          <div><h4>IDEA → SYSTEM</h4><p>A living night-graph: venues, curators and crowds in one responsive system with a strict design language.</p></div>
+          <div><h4>INTERACTION</h4><p>Swipeable night-stacks, velocity-aware cards, RSVP in two taps. Motion signals social heat.</p></div>
+          <div><h4>TECHNOLOGY → OUTCOME</h4><p>Design system + rapid front-end; an experience that feels like the night it promises.</p></div>
+        </div>
+        <a class="proj-link" href="#contact" data-cursor="OPEN">OPEN CASE STORY <span>→</span></a>
+      </div>
+      <div class="proj-media">
+        <a href="#contact" class="mask media-art ma-vybe" data-cursor="VYBE" aria-label="Vybe case story">
+          <span class="media-art" style="padding:0;background:none;min-height:clamp(340px,38vw,560px)">
+            <span class="ma-giant">VYBE</span>
+            <span class="ma-meta">NIGHT-GRAPH · V.02</span>
+            <span class="ma-foot"><p>DISCOVERY → RSVP<br>02 TAPS · 60 FPS MOTION</p><span class="ma-arrow">↗</span></span>
+          </span>
+        </a>
+      </div>
+    </article>
+
+    <!-- 02 TOOLVERSE -->
+    <article class="proj flip rv" data-primary="product web uiux" data-domain="devtools technology" data-name="toolverse">
+      <div class="proj-index">PRJ<b>02</b></div>
+      <div class="proj-body">
+        <div class="proj-tags"><span class="tag">Digital Product</span><span class="tag">Web</span><span class="tag">UI / UX</span><span class="tag">Developer tools</span></div>
+        <h3 class="proj-title"><a href="#contact" data-cursor="OPEN">TOOLVERSE</a></h3>
+        <p class="proj-lede">A universe of utilities for builders. Toolverse compresses dozens of daily developer workflows into one fast, keyboard-first command surface.</p>
+        <div class="proj-spec">
+          <div><h4>CONTEXT → PROBLEM</h4><p>Tool sprawl: twelve tabs, four converters, zero flow. Developers paid a context-switch tax hourly.</p></div>
+          <div><h4>IDEA → SYSTEM</h4><p>One command palette over a modular tool architecture — every utility a citizen of the same grid.</p></div>
+          <div><h4>INTERACTION</h4><p>⌘K everything, instant preview, zero page loads. Density without clutter; speed as a feature.</p></div>
+          <div><h4>TECHNOLOGY → OUTCOME</h4><p>Component system + performant front-end; a tool that respects the hands that use it.</p></div>
+        </div>
+        <a class="proj-link" href="#contact" data-cursor="OPEN">OPEN CASE STORY <span>→</span></a>
+      </div>
+      <div class="proj-media">
+        <a href="#contact" class="mask media-art ma-tool" data-cursor="TOOLS" aria-label="Toolverse case story">
+          <span class="media-art" style="padding:0;background:none;min-height:clamp(340px,38vw,560px)">
+            <span class="ma-giant">⌘K_</span>
+            <span class="ma-meta">CMD SURFACE · 40+ TOOLS</span>
+            <span class="ma-foot"><p>KEYBOARD-FIRST<br>ZERO-LOAD PREVIEWS</p><span class="ma-arrow">↗</span></span>
+          </span>
+        </a>
+      </div>
+    </article>
+
+    <!-- 03 NEXORA -->
+    <article class="proj rv" data-primary="product interaction experiment web" data-domain="ai technology" data-name="nexora">
+      <div class="proj-index">PRJ<b>03</b></div>
+      <div class="proj-body">
+        <div class="proj-tags"><span class="tag">Digital Product</span><span class="tag">AI</span><span class="tag">Interaction</span><span class="tag">Experiment</span></div>
+        <h3 class="proj-title"><a href="#contact" data-cursor="OPEN">NEXORA</a></h3>
+        <p class="proj-lede">An AI interface with a point of view. Nexora makes machine intelligence feel directed — structured, transparent, and strangely calm.</p>
+        <div class="proj-spec">
+          <div><h4>CONTEXT → PROBLEM</h4><p>AI tools felt like chat-shaped voids: powerful, but directionless and untrustworthy at the edges.</p></div>
+          <div><h4>IDEA → SYSTEM</h4><p>A guided intelligence workspace — streaming reasoning, inspectable sources, deterministic visual grammar.</p></div>
+          <div><h4>INTERACTION</h4><p>Token-stream choreography, generative canvases, interruptible flows. The machine thinks out loud.</p></div>
+          <div><h4>TECHNOLOGY → OUTCOME</h4><p>Creative development + motion systems; AI that reads as instrument, not oracle.</p></div>
+        </div>
+        <a class="proj-link" href="#contact" data-cursor="OPEN">OPEN CASE STORY <span>→</span></a>
+      </div>
+      <div class="proj-media">
+        <a href="#contact" class="mask media-art ma-nex" data-cursor="NEXORA" aria-label="Nexora case story">
+          <span class="media-art" style="padding:0;background:none;min-height:clamp(340px,38vw,560px)">
+            <span class="ma-giant">NEX◍RA</span>
+            <span class="ma-meta">AI WORKSPACE · STREAMING</span>
+            <span class="ma-foot"><p>GUIDED INTELLIGENCE<br>THINKING, VISIBLE</p><span class="ma-arrow">↗</span></span>
+          </span>
+        </a>
+      </div>
+    </article>
+
+    <!-- 04 HIGHRISES -->
+    <article class="proj flip rv" data-primary="web uiux interaction" data-domain="realestate technology" data-name="highrises">
+      <div class="proj-index">PRJ<b>04</b></div>
+      <div class="proj-body">
+        <div class="proj-tags"><span class="tag">Web</span><span class="tag">UI / UX</span><span class="tag">Real estate</span><span class="tag">Property</span></div>
+        <h3 class="proj-title"><a href="#contact" data-cursor="OPEN">HIGHRISES REALTY</a></h3>
+        <p class="proj-lede">Property, sold like cinema. Highrises Realty replaces listing-grid fatigue with editorial towers, light-aware imagery and enquiry in one motion.</p>
+        <div class="proj-spec">
+          <div><h4>CONTEXT → PROBLEM</h4><p>Premium stock presented like commodity rows. High-value buyers couldn't feel the asset.</p></div>
+          <div><h4>IDEA → SYSTEM</h4><p>An editorial property system: tower stories, residence templates, availability woven into narrative.</p></div>
+          <div><h4>INTERACTION</h4><p>Scroll-driven tower reveals, plan explorers, sticky enquiry that follows intent — responsive throughout.</p></div>
+          <div><h4>TECHNOLOGY → OUTCOME</h4><p>Design system + responsive build; browsing becomes viewing, viewing becomes visiting.</p></div>
+        </div>
+        <a class="proj-link" href="#contact" data-cursor="OPEN">OPEN CASE STORY <span>→</span></a>
+      </div>
+      <div class="proj-media">
+        <a href="#contact" class="mask media-art ma-high" data-cursor="TOWERS" aria-label="Highrises Realty case story">
+          <span class="media-art" style="padding:0;background:none;min-height:clamp(340px,38vw,560px)">
+            <span class="ma-giant">H/01</span>
+            <span class="ma-meta">TOWER STORIES · ENQUIRY ↓</span>
+            <span class="ma-foot"><p>EDITORIAL LISTINGS<br>SCROLL → VIEWING → VISIT</p><span class="ma-arrow">↗</span></span>
+          </span>
+        </a>
+      </div>
+    </article>
+
+    <div class="work-empty" id="workEmpty"><p>NO PROJECTS IN THIS COMBINATION — <button class="link-u" id="resetFilters" style="color:var(--obsidian);border-color:var(--obsidian)">RESET FILTERS</button></p></div>
+  </div>
+</section>
+
+<!-- ================= VANTA FIELD ================= -->
+<section class="field wrap" id="field" aria-label="Interactive project field">
+  <div class="sec-head">
+    <div style="grid-column:1/9">
+      <p class="kicker rv">03 — SIGNATURE · VANTA FIELD</p>
+      <h2 class="sec-title rv rv-d1">THE FIELD<br><span class="thin">OF WORK</span></h2>
+    </div>
+    <p class="sec-note rv rv-d2" style="grid-column:9/13">A dark interactive field of project matter. Move your cursor — type, numbers and fragments respond to position, scroll and velocity.</p>
+  </div>
+  <div class="field-stage rv" id="fieldStage">
+    <canvas id="fieldCanvas" aria-hidden="true"></canvas>
+    <p class="field-hint"><span>◍ INTERACTIVE — MOVE CURSOR</span><span id="fieldVel">VEL 0.00</span></p>
+    <div class="field-node" data-x="22" data-y="34" data-cursor="01"><span class="fn-ring"></span><span class="fn-num">PRJ — 01</span><span class="fn-name">VYBE</span><span class="fn-tag">NIGHTLIFE · PRODUCT</span></div>
+    <div class="field-node" data-x="68" data-y="28" data-cursor="02"><span class="fn-ring"></span><span class="fn-num">PRJ — 02</span><span class="fn-name">TOOLVERSE</span><span class="fn-tag">DEVTOOLS · WEB</span></div>
+    <div class="field-node" data-x="45" data-y="62" data-cursor="03"><span class="fn-ring"></span><span class="fn-num">PRJ — 03</span><span class="fn-name">NEXORA</span><span class="fn-tag">AI · INTERACTION</span></div>
+    <div class="field-node" data-x="82" data-y="68" data-cursor="04"><span class="fn-ring"></span><span class="fn-num">PRJ — 04</span><span class="fn-name">HIGHRISES</span><span class="fn-tag">REAL ESTATE · WEB</span></div>
+    <div class="field-readout"><span>CURSOR <b id="fieldXY">0 · 0</b></span><span>RELATIONSHIPS REVEAL ON PROXIMITY <b>— HOVER A NODE</b></span><span>NODES <b>04</b></span></div>
+  </div>
+</section>
+
+<!-- ================= SERVICES ================= -->
+<section class="services wrap" id="services" aria-label="Services">
+  <div class="sec-head">
+    <div style="grid-column:1/9">
+      <p class="kicker rv">04 — CAPABILITIES</p>
+      <h2 class="sec-title rv rv-d1">SERVICE<br><span class="thin">→ PROOF</span></h2>
+    </div>
+    <p class="sec-note rv rv-d2" style="grid-column:9/13">No capability without evidence. Select a service — the proof panel shows the exact projects it shaped.</p>
+  </div>
+  <div class="svc-grid">
+    <div class="svc-list rv" id="svcList" role="list">
+      <button class="svc active" role="listitem" data-svc="strategy" aria-expanded="true"><span class="s-num">/01</span><h3>Digital Strategy<small>POSITIONING · SCOPE · ROADMAP</small></h3><span class="s-plus">+</span></button>
+      <button class="svc" role="listitem" data-svc="uxui" aria-expanded="false"><span class="s-num">/02</span><h3>UX / UI<small>ARCHITECTURE · FLOWS · INTERFACE</small></h3><span class="s-plus">+</span></button>
+      <button class="svc" role="listitem" data-svc="web" aria-expanded="false"><span class="s-num">/03</span><h3>Web Design<small>EDITORIAL · RESPONSIVE · CMS-READY</small></h3><span class="s-plus">+</span></button>
+      <button class="svc" role="listitem" data-svc="products" aria-expanded="false"><span class="s-num">/04</span><h3>Digital Products<small>0 → 1 · MVP · SCALE</small></h3><span class="s-plus">+</span></button>
+      <button class="svc" role="listitem" data-svc="interaction" aria-expanded="false"><span class="s-num">/05</span><h3>Interaction<small>MOTION GRAMMAR · MICRO-STATES</small></h3><span class="s-plus">+</span></button>
+      <button class="svc" role="listitem" data-svc="creative" aria-expanded="false"><span class="s-num">/06</span><h3>Creative Development<small>FRONT-END · WEBGL · PERFORMANCE</small></h3><span class="s-plus">+</span></button>
+      <button class="svc" role="listitem" data-svc="motion" aria-expanded="false"><span class="s-num">/07</span><h3>Motion<small>CHOREOGRAPHY · SCROLL · 3D</small></h3><span class="s-plus">+</span></button>
+      <button class="svc" role="listitem" data-svc="systems" aria-expanded="false"><span class="s-num">/08</span><h3>Design Systems<small>TOKENS · COMPONENTS · DOCS</small></h3><span class="s-plus">+</span></button>
+    </div>
+    <aside class="svc-proof rv rv-d1" aria-live="polite" aria-label="Service proof">
+      <div><p class="sp-k" id="spK">CAPABILITY /01 — DIGITAL STRATEGY</p><h4 id="spTitle">Position before pixels.</h4>
+      <p id="spBody">Every build starts with a sharp thesis: who it's for, why it wins, what it refuses to be. Strategy set the night-graph for VYBE, the command-model for Toolverse, the calm-AI stance for Nexora and the editorial thesis for Highrises.</p></div>
+      <div class="sp-projs" id="spProjs">
+        <a href="#work" data-cursor="01">01 — VYBE <span>NIGHT-GRAPH THESIS →</span></a>
+        <a href="#work" data-cursor="03">03 — NEXORA <span>CALM-AI STANCE →</span></a>
+        <a href="#work" data-cursor="04">04 — HIGHRISES <span>EDITORIAL THESIS →</span></a>
+      </div>
+    </aside>
+  </div>
+</section>
+
+<!-- ================= PROCESS ================= -->
+<section class="process" id="process" aria-label="Process">
+  <div class="wrap">
+    <div class="sec-head">
+      <div style="grid-column:1/8">
+        <p class="kicker rv" style="color:#7a7a83">05 — PROCESS</p>
+        <h2 class="sec-title rv rv-d1">IDEA →<br><span class="thin">PRODUCT</span></h2>
+      </div>
+      <p class="sec-note rv rv-d2" style="grid-column:9/13">Seven movements, one direction. Typography marks the descent from ambiguity to a living, evolving product.</p>
+    </div>
+    <div class="proc-list">
+      <div class="step rv"><div class="st-num">PHASE<b>01</b></div><h3>Discover</h3><p>Immersion: audience, market, constraints, intent. We listen harder than we sketch — the sharpest insights arrive before a single pixel.</p><span class="st-go meta">→</span><span class="st-bar"><i></i></span></div>
+      <div class="step rv"><div class="st-num">PHASE<b>02</b></div><h3>Define</h3><p>Thesis and architecture: positioning, scope, information hierarchy, success criteria. Ambiguity converted into a buildable map.</p><span class="st-go meta">→</span><span class="st-bar"><i></i></span></div>
+      <div class="step rv"><div class="st-num">PHASE<b>03</b></div><h3>Design</h3><p>Art direction and interface: composition, typography, imagery, design tokens. Beauty drafted against purpose, never decoration.</p><span class="st-go meta">→</span><span class="st-bar"><i></i></span></div>
+      <div class="step rv"><div class="st-num">PHASE<b>04</b></div><h3>Build</h3><p>Creative engineering: responsive front-end, interaction systems, performance budgets. The design becomes software that holds up.</p><span class="st-go meta">→</span><span class="st-bar"><i></i></span></div>
+      <div class="step rv"><div class="st-num">PHASE<b>05</b></div><h3>Refine</h3><p>Motion tuning, edge cases, accessibility, device sweeps from 320 to 1920. Detail is where distinction is manufactured.</p><span class="st-go meta">→</span><span class="st-bar"><i></i></span></div>
+      <div class="step rv"><div class="st-num">PHASE<b>06</b></div><h3>Launch</h3><p>Release choreography: hardening, analytics, handover. A calm, deliberate entry into the world — never a scramble.</p><span class="st-go meta">→</span><span class="st-bar"><i></i></span></div>
+      <div class="step rv"><div class="st-num">PHASE<b>07</b></div><h3>Evolve</h3><p>Measure, learn, extend. Products are conversations — we stay to sharpen what launch taught us and compound the advantage.</p><span class="st-go meta">↺</span><span class="st-bar"><i></i></span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= LAB ================= -->
+<section class="lab wrap" id="lab" aria-label="Lab experiments">
+  <div class="sec-head">
+    <div style="grid-column:1/9">
+      <p class="kicker rv">06 — LAB / EXPERIMENTS</p>
+      <h2 class="sec-title rv rv-d1">SMALL. STRANGE.<br><span class="thin">MEMORABLE.</span></h2>
+    </div>
+    <p class="sec-note rv rv-d2" style="grid-column:9/13">Proof we explore beyond client work — motion, WebGL, typography, AI and generative craft. Hover to wake each one.</p>
+  </div>
+  <div class="lab-grid">
+    <button class="exp rv" data-cursor="PLAY"><div><div class="e-top"><span>EXP—01</span><span>MOTION</span></div><h3>Velocity Type</h3><p>Display type that leans into scroll speed. The faster you move, the more it speaks.</p></div><div class="e-demo"><span class="marq">VELOCITY VELOCITY VELOCITY&nbsp;</span></div></button>
+    <button class="exp rv rv-d1" data-cursor="PLAY"><div><div class="e-top"><span>EXP—02</span><span>3D / WEBGL</span></div><h3>Orbital Study</h3><p>A single orbit, sixty frames per second. Restraint as a rendering strategy.</p></div><div class="e-demo"><div class="orbit"><i></i></div></div></button>
+    <button class="exp rv rv-d2" data-cursor="PLAY"><div><div class="e-top"><span>EXP—03</span><span>INTERACTION</span></div><h3>Signal / Noise</h3><p>An equalizer for attention — interface elements that breathe at different rates.</p></div><div class="e-demo"><div class="wave" aria-hidden="true"><i style="height:44px"></i><i style="height:22px"></i><i style="height:52px"></i><i style="height:30px"></i><i style="height:48px"></i><i style="height:18px"></i><i style="height:40px"></i><i style="height:26px"></i><i style="height:54px"></i><i style="height:34px"></i></div></div></button>
+    <button class="exp rv" data-cursor="PLAY"><div><div class="e-top"><span>EXP—04</span><span>TYPOGRAPHY</span></div><h3>Scramble Field</h3><p>Metadata that decrypts itself on approach. Meaning, briefly encrypted.</p></div><div class="e-demo"><span class="type-scramble" data-scramble="BEAUTY ▓ NEEDS ▓ PURPOSE">BEAUTY ▓ NEEDS ▓ PURPOSE</span></div></button>
+    <button class="exp rv rv-d1" data-cursor="PLAY"><div><div class="e-top"><span>EXP—05</span><span>AI / GENERATIVE</span></div><h3>Latent Dots</h3><p>Three particles negotiating. A minimal portrait of machine patience.</p></div><div class="e-demo"><div class="dots"><i></i><i></i><i></i></div></div></button>
+    <button class="exp rv rv-d2" data-cursor="PLAY"><div><div class="e-top"><span>EXP—06</span><span>CREATIVE CODE</span></div><h3>Grid Ghosts</h3><p>A twelve-column grid haunted beautifully. Structure flickering at the edge of vision.</p></div><div class="e-demo"><div class="grid-demo" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div></div></button>
+  </div>
+</section>
+
+<!-- ================= STUDIO ================= -->
+<section class="studio wrap" id="studio" aria-label="Studio">
+  <p class="kicker rv">07 — STUDIO</p>
+  <p class="studio-statement rv rv-d1" style="margin-top:26px">WE BELIEVE SOFTWARE SHOULD FEEL <span class="stroke">CONSIDERED</span> — EVERY PIXEL ARGUED FOR, EVERY TRANSITION EARNED.</p>
+  <div class="studio-cols">
+    <ul class="beliefs rv">
+      <li><b>B—01</b><div><h4>Beauty needs purpose</h4><p>Aesthetic decisions must move hierarchy, story or conversion — or they don't survive review.</p></div></li>
+      <li><b>B—02</b><div><h4>Detail creates distinction</h4><p>Awards are won at 3px and 180 milliseconds. We tune what most studios skip.</p></div></li>
+      <li><b>B—03</b><div><h4>Experience is the product</h4><p>Features are table stakes. The felt journey — from first viewport to enquiry — is the deliverable.</p></div></li>
+    </ul>
+    <div class="studio-side">
+      <div class="rv"><p class="meta" style="margin-bottom:14px">CAPABILITIES — ONE SYSTEM</p>
+        <div class="cap-cloud"><span>DIGITAL STRATEGY</span><span>UX / UI</span><span>WEB DESIGN</span><span>DIGITAL PRODUCTS</span><span>INTERACTION</span><span>CREATIVE DEV</span><span>MOTION</span><span>DESIGN SYSTEMS</span></div></div>
+      <div class="studio-facts rv rv-d1">
+        <div><h5>POSITION</h5><p>Independent creative technology studio. Working worldwide, embedded tightly with few teams at a time.</p></div>
+        <div><h5>PROOF</h5><p>VYBE · Toolverse · Nexora · Highrises Realty — four builds, one standard: from idea to digital product.</p></div>
+      </div>
+      <div class="rv rv-d2"><a href="#contact" class="btn btn-ghost mag" data-cursor="HELLO">WORK WITH THE STUDIO <span class="arr">→</span></a></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= INSIGHTS ================= -->
+<section class="insights" id="insights" aria-label="Insights">
+  <div class="wrap">
+    <div class="sec-head">
+      <div style="grid-column:1/9">
+        <p class="kicker rv" style="color:#7a7a83">08 — INSIGHTS</p>
+        <h2 class="sec-title rv rv-d1">EDITORIAL<br><span class="thin">INDEX</span></h2>
+      </div>
+      <p class="sec-note rv rv-d2" style="grid-column:9/13">Writing on design, UX, digital products, branding, interaction, AI and creative technology. The index is being set — first essays forthcoming. Nothing fabricated, nothing backdated.</p>
+    </div>
+    <div class="ins-cats rv" aria-label="Topics"><span>DESIGN</span><span>UX</span><span>DIGITAL PRODUCTS</span><span>BRANDING</span><span>INTERACTION</span><span>AI</span><span>CREATIVE TECHNOLOGY</span></div>
+    <div class="ins-list">
+      <div class="ins-row rv"><span class="i-n">№ 001</span><h3>From idea to digital product<small>How we structure ambiguity into shippable systems — forthcoming essay.</small></h3><span class="pill">FORTHCOMING</span></div>
+      <div class="ins-row rv"><span class="i-n">№ 002</span><h3>Motion with manners<small>Choreographing interface movement that respects attention — forthcoming essay.</small></h3><span class="pill">FORTHCOMING</span></div>
+      <div class="ins-row rv"><span class="i-n">№ 003</span><h3>The service → proof method<small>Why every capability must carry its evidence — forthcoming essay.</small></h3><span class="pill">FORTHCOMING</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CONTACT ================= -->
+<section class="contact wrap" id="contact" aria-label="Contact">
+  <div class="sec-head">
+    <div style="grid-column:1/13"><p class="kicker rv">09 — CONTACT · PROJECT ENQUIRY</p></div>
+  </div>
+  <div class="ct-grid">
+    <div class="ct-left">
+      <h2 class="ct-title rv">HAVE AN IDEA<br><span class="stroke">WORTH BUILDING?</span><br>LET'S MAKE<br>IT DISTINCT.</h2>
+      <p class="rv rv-d1">Entering a project with CTS starts here — not with a generic form, but with intent. Tell us what you're building, what it must become, and when it matters. We reply to every considered enquiry.</p>
+      <div class="rv rv-d2"><a class="ct-mail mag" href="mailto:hello@cts.studio" data-cursor="WRITE">hello@cts.studio ↗</a>
+        <div class="ct-facts">
+          <div><h5>RESPONSE</h5><p>Within 2 working days</p></div>
+          <div><h5>ENGAGEMENTS</h5><p>Selective · worldwide</p></div>
+          <div><h5>CLOCK</h5><p id="clock2">00:00 — LOCAL</p></div>
+        </div>
+      </div>
+    </div>
+    <form class="ct-form rv rv-d1" id="contactForm" novalidate aria-label="Project enquiry form">
+      <div class="f-2">
+        <div class="field"><label for="fName">Name *</label><input id="fName" name="name" type="text" placeholder="Ada Lovelace" autocomplete="name" required><p class="f-err" id="eName">Please share your name.</p></div>
+        <div class="field"><label for="fCompany">Company</label><input id="fCompany" name="company" type="text" placeholder="Studio / Org (optional)" autocomplete="organization"></div>
+      </div>
+      <div class="field"><label for="fEmail">Email *</label><input id="fEmail" name="email" type="email" placeholder="you@company.com" autocomplete="email" required><p class="f-err" id="eEmail">Enter a valid email address.</p></div>
+      <fieldset><legend class="f-legend">Project type *</legend>
+        <div class="opt-row" id="typeRow">
+          <label class="opt"><input type="radio" name="ptype" value="Digital product"><span>DIGITAL PRODUCT</span></label>
+          <label class="opt"><input type="radio" name="ptype" value="Website"><span>WEBSITE</span></label>
+          <label class="opt"><input type="radio" name="ptype" value="UI/UX"><span>UI / UX</span></label>
+          <label class="opt"><input type="radio" name="ptype" value="Interaction / Motion"><span>INTERACTION</span></label>
+          <label class="opt"><input type="radio" name="ptype" value="AI product"><span>AI PRODUCT</span></label>
+          <label class="opt"><input type="radio" name="ptype" value="Other"><span>OTHER</span></label>
+        </div><p class="f-err" id="eType">Choose one project type.</p>
+      </fieldset>
+      <div class="f-2">
+        <fieldset><legend class="f-legend">Budget</legend>
+          <div class="opt-row">
+            <label class="opt"><input type="radio" name="budget" value="<5k"><span>&lt; 5K</span></label>
+            <label class="opt"><input type="radio" name="budget" value="5-15k"><span>5–15K</span></label>
+            <label class="opt"><input type="radio" name="budget" value="15-50k"><span>15–50K</span></label>
+            <label class="opt"><input type="radio" name="budget" value="50k+"><span>50K+</span></label>
+          </div>
+        </fieldset>
+        <div class="field"><label for="fTime">Timeline</label>
+          <select id="fTime" name="timeline"><option value="">Select…</option><option>ASAP — let's move</option><option>1–2 months</option><option>3–6 months</option><option>Exploring / flexible</option></select>
+        </div>
+      </div>
+      <div class="field"><label for="fDesc">Project description *</label><textarea id="fDesc" name="description" placeholder="What are you building? Who is it for? What must it become? Links welcome." required></textarea><p class="f-err" id="eDesc">Give us at least a sentence (20+ characters).</p></div>
+      <div class="form-foot">
+        <button type="submit" class="btn btn-solid submit mag" id="submitBtn" data-cursor="SEND"><span class="spinner" aria-hidden="true"></span><span id="submitLabel">START THE CONVERSATION</span><span class="arr">→</span></button>
+        <span class="form-status" id="formStatus" role="status" aria-live="polite">AVG. REPLY — 2 WORKING DAYS</span>
+      </div>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p class="ft-mark" aria-hidden="true">CTS®</p>
+    <div class="ft-row">
+      <span>© 2026 CTS® STUDIO — DESIGN × TECHNOLOGY × EXPERIENCE</span>
+      <nav aria-label="Footer"><a href="#work">WORK</a><a href="#services">SERVICES</a><a href="#lab">LAB</a><a href="#studio">STUDIO</a><a href="#contact">CONTACT</a></nav>
+      <button class="to-top" id="toTop">BACK TO TOP ↑</button>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js" defer></script>
+</body>
+</html>

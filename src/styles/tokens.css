@@ -1,0 +1,86 @@
+/* ============================================================
+   CTS NEO-BRUTALIST DESIGN TOKENS — single source of truth
+   BG #ECE8EF · SURFACE #E7F0FF · SURFACE-2 #E3EBFF
+   ACTION #4392F1 · ALERT #DC493A · INK (text/borders) near-black
+   Blue = interaction · Red = emphasis · Ink = structure.
+   ============================================================ */
+:root {
+  /* palette roles */
+  --color-primary: #4392f1;
+  --color-primary-deep: #2b74d8;
+  --color-primary-ink: #1450b4;
+  --color-primary-soft: rgba(67, 146, 241, 0.14);
+  --color-primary-faint: rgba(67, 146, 241, 0.08);
+
+  --color-background: #ece8ef;
+  --color-surface: #e7f0ff;
+  --color-surface-elevated: #ffffff;
+  --color-surface-blue: #e3ebff;
+  --color-neutral: #ece8ef;
+  --color-paper: #ffffff;
+
+  /* near-black ink for text + structural borders */
+  --color-ink: #111318;
+  --color-ink-soft: #2a2e37;
+  --color-charcoal: #1d2129;
+  --color-text: #14161b;
+  --color-text-muted: #3f4757;
+  --color-text-faint: #565e72;
+
+  /* remapped aliases (never reintroduce legacy hues) */
+  --color-accent: var(--color-primary);
+  --color-accent-deep: var(--color-primary-ink);
+  --color-accent-soft: var(--color-primary-soft);
+
+  /* border system: 1px subtle / 2px component / 3px major */
+  --border-thin: 1px;
+  --border-med: 2px;
+  --border-thick: 3px;
+  --color-line: rgba(17, 19, 24, 0.14);
+  --color-border: #16181d;
+  --color-border-strong: #16181d;
+  --color-border-dark: rgba(236, 232, 239, 0.24);
+
+  /* states — red is strategic */
+  --color-success: #1450b4;
+  --color-warning: #b23225;
+  --color-error: #dc493a;
+  --color-error-ink: #b23225;
+
+  /* inverted (near-black) depth layers — used sparingly */
+  --color-dark-bg: #101319;
+  --color-dark-bg-2: #181d27;
+  --color-dark-text: #ece8ef;
+  --color-dark-muted: #a8b2c6;
+  --color-primary-on-dark: #7fb0f7;
+
+  /* type — neo-grotesk system */
+  --font-display: "Archivo", "Arial Narrow", system-ui, sans-serif;
+  --font-sans: "Archivo", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-mono: "Space Mono", "SFMono-Regular", Consolas, monospace;
+
+  /* spacing */
+  --space-xs: 8px; --space-sm: 14px; --space-md: 24px; --space-lg: 40px;
+  --space-xl: 64px; --space-2xl: 104px; --space-3xl: 150px; --space-4xl: 200px;
+  --section-pad: clamp(88px, 10vw, 160px);
+  --gutter: clamp(20px, 4.5vw, 76px);
+  --maxw: 1440px;
+
+  /* geometry — architectural, radius 0 default */
+  --radius-sm: 2px; --radius-md: 4px; --radius-lg: 6px; --radius-pill: 6px;
+
+  /* hard-shadow scale */
+  --shadow-sm: 3px 3px 0 var(--color-border);
+  --shadow-md: 5px 5px 0 var(--color-border);
+  --shadow-lg: 8px 8px 0 var(--color-border);
+  --shadow-red: 5px 5px 0 var(--color-error);
+  --shadow-blue: 5px 5px 0 var(--color-primary);
+
+  /* motion */
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-snap: cubic-bezier(0.65, 0, 0.35, 1);
+  --dur-fast: 160ms; --dur-med: 420ms; --dur-slow: 800ms;
+
+  /* z-index */
+  --z-nav: 120; --z-menu: 130; --z-float: 105; --z-top: 200;
+}

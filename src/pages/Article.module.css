@@ -1,0 +1,16 @@
+.article { padding-top: clamp(56px, 6vw, 90px); }
+.narrow { max-width: 840px; }
+.narrow > div > p, .narrow p { font-size: clamp(17px, 1.6vw, 19.5px); line-height: 1.8; color: var(--color-text); font-weight: 500; margin-bottom: 30px; }
+.narrow p:first-child::first-letter { font-family: var(--font-display); font-size: 3.2em; font-weight: 900; float: left; line-height: 0.85; padding: 8px 14px 8px 0; margin: 6px 14px 0 0; background: var(--color-primary); border: var(--border-med) solid var(--color-border); }
+.ctaBox { background: var(--color-ink); color: #fff; border: var(--border-thick) solid var(--color-border); box-shadow: 8px 8px 0 var(--color-error); padding: clamp(30px, 4vw, 50px); margin: 54px 0 40px; display: flex; justify-content: space-between; align-items: center; gap: 24px; flex-wrap: wrap; }
+.ctaBox p { font-family: var(--font-display); font-size: clamp(24px, 2.8vw, 34px); font-weight: 900; text-transform: uppercase; letter-spacing: -0.01em; line-height: 0.95; margin: 0; color: #fff; }
+.back { display: inline-flex; align-items: center; gap: 8px; font-size: 12px; font-weight: 800; letter-spacing: 0.16em; text-transform: uppercase; border: var(--border-med) solid var(--color-border); background: var(--color-paper); padding: 12px 20px; transition: all 0.18s var(--ease-snap); }
+.back:hover { transform: translate(-2px, -2px); box-shadow: 4px 4px 0 var(--color-border); }
+.related { margin-top: 60px; border-top: var(--border-thick) solid var(--color-border); padding-top: 34px; }
+.related h2 { font-size: clamp(28px, 3.2vw, 42px); margin-bottom: 20px; }
+.rRow { display: grid; grid-template-columns: 200px 1fr auto; gap: 18px; align-items: center; padding: 22px 8px; border-bottom: var(--border-med) solid var(--color-border); transition: background 0.2s, padding 0.2s; }
+.rRow span { font-family: var(--font-mono); font-size: 11px; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; background: var(--color-ink); color: #fff; padding: 6px 10px; justify-self: start; }
+.rRow strong { font-family: var(--font-display); font-size: 22px; font-weight: 800; text-transform: uppercase; letter-spacing: -0.01em; }
+.rRow:hover { background: var(--color-surface); padding-left: 18px; }
+.rRow:hover svg { color: var(--color-error); }
+@media (max-width: 640px) { .rRow { grid-template-columns: 1fr auto; } .rRow span { grid-column: 1 / -1; } }

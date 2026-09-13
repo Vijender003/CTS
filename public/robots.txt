@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://cts.example.com/sitemap.xml

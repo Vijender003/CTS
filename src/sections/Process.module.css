@@ -1,0 +1,10 @@
+.proc { padding-top: var(--section-pad); padding-bottom: var(--section-pad); background: var(--color-surface); border-top: var(--border-thick) solid var(--color-border); border-bottom: var(--border-thick) solid var(--color-border); overflow: clip; }
+.track { display: grid; grid-auto-flow: column; grid-auto-columns: minmax(300px, 1fr); overflow-x: auto; scroll-snap-type: x mandatory; border-top: var(--border-thick) solid var(--color-border); padding-bottom: 18px; scrollbar-width: thin; }
+.step { scroll-snap-align: start; padding: 28px 30px 12px; border-left: var(--border-med) solid var(--color-border); min-height: 280px; background: transparent; transition: background 0.25s; }
+.step:first-child { border-left: 0; padding-left: 0; }
+.step:hover { background: var(--color-paper); }
+.n { font-family: var(--font-display); font-size: clamp(56px, 5.5vw, 88px); font-weight: 900; letter-spacing: -0.03em; line-height: 1; color: transparent; -webkit-text-stroke: 2px var(--color-border); transition: all 0.25s; }
+.step:hover .n { color: var(--color-primary); -webkit-text-stroke: 2px var(--color-border); }
+.step h3 { font-family: var(--font-display); font-size: clamp(26px, 2.6vw, 36px); font-weight: 900; text-transform: uppercase; margin: 16px 0 10px; letter-spacing: -0.01em; }
+.step p { font-size: 14.5px; font-weight: 500; color: var(--color-text-muted); max-width: 30ch; }
+@media (max-width: 700px) { .track { grid-auto-flow: row; grid-auto-columns: unset; overflow: visible; } .step { border-left: 0; border-top: var(--border-med) solid var(--color-border); padding-left: 0; min-height: 0; } }

@@ -1,0 +1,20 @@
+.cats { display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 36px; }
+.cats button { font-family: var(--font-mono); font-size: 11px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; border: var(--border-med) solid var(--color-border); background: var(--color-paper); padding: 11px 20px; transition: all 0.16s var(--ease-snap); }
+.cats button:hover { transform: translate(-2px, -2px); box-shadow: 4px 4px 0 var(--color-border); }
+.cats .on { background: var(--color-error); border-color: var(--color-border); color: #fff; box-shadow: 4px 4px 0 var(--color-border); transform: translate(-2px, -2px); }
+.feat { display: block; background: var(--color-ink); color: #fff; border: var(--border-thick) solid var(--color-border); box-shadow: var(--shadow-lg); padding: clamp(34px, 4vw, 60px); margin-bottom: 20px; transform: translate(0, 0); transition: transform 0.2s var(--ease-snap), box-shadow 0.2s var(--ease-snap); }
+.feat:hover { transform: translate(-3px, -3px); box-shadow: 11px 11px 0 var(--color-primary); }
+.feat span { font-family: var(--font-mono); font-size: 11px; font-weight: 700; letter-spacing: 0.22em; text-transform: uppercase; background: var(--color-error); padding: 6px 12px; }
+.feat h2 { font-size: clamp(34px, 4.8vw, 66px); margin: 20px 0 14px; max-width: 22ch; line-height: 0.92; }
+.feat p { color: var(--color-dark-muted); font-size: 16px; font-weight: 500; max-width: 64ch; }
+.grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; align-items: start; }
+.card { display: flex; flex-direction: column; height: 100%; background: var(--color-paper); border: var(--border-med) solid var(--color-border); padding: 28px 26px; transform: translate(0, 0); transition: all 0.18s var(--ease-snap); }
+.card:hover { transform: translate(-3px, -3px); box-shadow: 6px 6px 0 var(--color-border); }
+.card span { font-family: var(--font-mono); font-size: 10px; font-weight: 700; letter-spacing: 0.2em; text-transform: uppercase; color: var(--color-primary-ink); border-bottom: 3px solid var(--color-primary); align-self: flex-start; padding-bottom: 4px; }
+.card h3 { font-family: var(--font-display); font-size: 24px; font-weight: 900; text-transform: uppercase; letter-spacing: -0.01em; line-height: 0.95; margin: 14px 0 10px; }
+.card p { font-size: 14px; font-weight: 500; color: var(--color-text-muted); flex: 1; }
+.card em { display: inline-flex; align-items: center; gap: 6px; font-style: normal; margin-top: 20px; font-size: 12px; font-weight: 800; letter-spacing: 0.14em; text-transform: uppercase; }
+.card em svg { transition: all 0.2s; }
+.card:hover em svg { color: var(--color-error); transform: translate(3px, -3px); }
+@media (max-width: 1020px) { .grid { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 640px) { .grid { grid-template-columns: 1fr; } }

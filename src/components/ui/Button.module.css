@@ -1,0 +1,28 @@
+/* Physical brutalist buttons — press, don't fade. */
+.btn {
+  display: inline-flex; align-items: center; gap: 10px;
+  font-family: var(--font-sans); font-size: 13px; font-weight: 800;
+  letter-spacing: 0.12em; text-transform: uppercase;
+  padding: 17px 30px; border-radius: 0;
+  border: var(--border-med) solid var(--color-border);
+  white-space: nowrap; user-select: none;
+  transform: translate(0, 0); box-shadow: var(--shadow-md);
+  transition: transform 0.16s var(--ease-snap), box-shadow 0.16s var(--ease-snap), background 0.2s, color 0.2s;
+}
+.btn svg { transition: transform 0.25s var(--ease-out), color 0.2s; }
+.btn:hover { transform: translate(2px, 2px); box-shadow: 3px 3px 0 var(--color-border); }
+.btn:hover svg { transform: translate(3px, -3px); color: var(--color-error); }
+.btn:active { transform: translate(5px, 5px); box-shadow: 0 0 0 var(--color-border); }
+.btn:disabled { opacity: 0.55; cursor: wait; transform: none; }
+.solid { background: var(--color-primary); color: #101319; }
+.solid:hover { background: #5b9bf3; }
+.gold { background: var(--color-ink); color: var(--color-background); }
+.gold:hover { background: var(--color-charcoal); }
+.ghost { border-color: var(--color-border); color: var(--color-ink); background: transparent; box-shadow: none; }
+.ghost:hover { background: var(--color-surface); box-shadow: var(--shadow-sm); }
+.light { background: var(--color-paper); color: var(--color-ink); }
+.light:hover { background: var(--color-surface-blue); }
+.outlineLight { border-color: var(--color-background); color: var(--color-background); box-shadow: 5px 5px 0 rgba(236, 232, 239, 0.85); }
+.outlineLight:hover { background: var(--color-primary); border-color: var(--color-ink); color: #101319; box-shadow: 3px 3px 0 rgba(236, 232, 239, 0.85); }
+.outlineLight:active { box-shadow: 0 0 0 rgba(0, 0, 0, 0); }
+.small { padding: 12px 22px; font-size: 12px; }

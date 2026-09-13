@@ -1,0 +1,17 @@
+.wrap { position: fixed; inset: 0; z-index: 300; pointer-events: none; display: none; }
+@media (hover: hover) and (pointer: fine) { .wrap { display: block; } }
+.dot, .ring { position: fixed; top: 0; left: 0; }
+.dot { width: 8px; height: 8px; margin: -4px 0 0 -4px; background: var(--color-error); }
+.ring {
+  width: 40px; height: 40px; margin: -20px 0 0 -20px;
+  border: var(--border-med) solid var(--color-border);
+  display: flex; align-items: center; justify-content: center;
+  background: transparent;
+  transition: width 0.25s var(--ease-out), height 0.25s var(--ease-out), margin 0.25s var(--ease-out), background 0.25s, border-color 0.25s;
+}
+.ring.on { width: 76px; height: 76px; margin: -38px 0 0 -38px; background: var(--color-primary); border-color: var(--color-border); }
+.label { font-family: var(--font-mono); font-size: 10px; font-weight: 700; letter-spacing: 0.12em; color: #101319; opacity: 0; transition: opacity 0.2s; }
+.ring.on .label { opacity: 1; }
+/* hide native cursor only over interactive zones is risky — keep native visible, follower accents */
+.native, .native a, .native button { cursor: auto; }
+@media (prefers-reduced-motion: reduce) { .wrap { display: none; } }

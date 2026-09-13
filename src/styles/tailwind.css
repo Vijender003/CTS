@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+/* Tailwind theme — mirrors the neo-brutalist tokens in tokens.css.
+   Utilities: bg-primary, text-ink, bg-base, borders, font-display/grotesk/mono. */
+@theme {
+  --color-primary: #4392f1;
+  --color-primary-deep: #2b74d8;
+  --color-primary-ink: #1450b4;
+  --color-primary-ondark: #7fb0f7;
+  --color-base: #ece8ef;
+  --color-surface: #e7f0ff;
+  --color-surface2: #e3ebff;
+  --color-coral: #dc493a;
+  --color-coral-deep: #b23225;
+  --color-ink: #111318;
+  --color-inksoft: #2a2e37;
+  --color-inktext: #14161b;
+  --color-muted: #3f4757;
+  --color-deepbg: #101319;
+  --color-deepbg2: #181d27;
+  --font-display: "Archivo", "Arial Narrow", system-ui, sans-serif;
+  --font-sans: "Archivo", system-ui, sans-serif;
+  --font-grotesk: "Archivo", system-ui, sans-serif;
+  --font-mono: "Space Mono", Consolas, monospace;
+}

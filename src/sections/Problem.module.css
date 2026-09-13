@@ -1,0 +1,18 @@
+.panels { display: grid; grid-template-columns: 1fr 90px 1fr; gap: clamp(16px, 2.5vw, 32px); align-items: stretch; margin-top: 8px; }
+.before, .after { border: var(--border-med) solid var(--color-border); padding: clamp(28px, 3vw, 44px); }
+.before { background: var(--color-paper); box-shadow: var(--shadow-md); }
+.before h3 { font-size: clamp(26px, 3vw, 40px); margin: 14px 0 20px; color: var(--color-text-muted); }
+.before li { display: flex; gap: 12px; align-items: center; padding: 12px 0; border-top: 1px solid var(--color-line); color: var(--color-text-muted); font-size: 15px; font-weight: 500; }
+.before li svg { color: var(--color-error); flex: none; }
+.after { background: var(--color-ink); color: #fff; box-shadow: 8px 8px 0 var(--color-primary); position: relative; }
+.after h3 { font-size: clamp(26px, 3vw, 40px); margin: 14px 0 20px; color: #fff; }
+.after li { display: flex; gap: 12px; align-items: center; padding: 12px 0; border-top: 1px solid rgba(236, 232, 239, 0.24); font-size: 15px; font-weight: 500; }
+.after li svg { color: var(--color-primary-on-dark); flex: none; }
+.pKick { font-family: var(--font-mono); font-size: 11px; font-weight: 700; letter-spacing: 0.24em; text-transform: uppercase; display: inline-block; padding: 6px 12px; }
+.before .pKick { background: var(--color-neutral); color: var(--color-text); border: var(--border-med) solid var(--color-border); }
+.after .pKick { background: var(--color-error); color: #fff; }
+.arrow { align-self: center; justify-self: center; font-family: var(--font-display); font-weight: 900; font-size: clamp(28px, 3.4vw, 44px); background: var(--color-primary); border: var(--border-med) solid var(--color-border); width: 72px; height: 72px; display: flex; align-items: center; justify-content: center; box-shadow: var(--shadow-sm); }
+.systems { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 34px; }
+.systems li { font-family: var(--font-mono); font-size: 11px; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; border: var(--border-med) solid var(--color-border); background: var(--color-surface); padding: 10px 18px; transition: all 0.18s var(--ease-snap); }
+.systems li:hover { background: var(--color-ink); color: #fff; transform: translate(-2px, -2px); box-shadow: 4px 4px 0 var(--color-primary); }
+@media (max-width: 900px) { .panels { grid-template-columns: 1fr; } .arrow { transform: rotate(90deg); } }
